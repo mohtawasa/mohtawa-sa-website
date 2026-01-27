@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="../images/nav_logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Clients - Mohtawa</title>
@@ -12,38 +13,46 @@
         <div class="container">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <img src="../images/logo.png" alt="Mohtawa Logo" class="footer-logo-img" style="width:32px;height:auto;vertical-align:middle;" />
-                    <span>Mohtawa</span>
+                    <img src="../images/nav_logo.png" alt="Mohtawa Logo" class="nav-logo-img" />
+                    <span style="color: #6b4c9a;">Mohtawa</span>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#about">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="clients.html">Clients</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                                <button class="nav-toggle" aria-label="Open navigation">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </button>
+                                <ul class="nav-links">
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="../index.html#about">About</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="clients.html">Clients</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                </ul>
             </div>
         </div>
     </nav>
 
     <!-- Clients Section -->
-    <section class="clients">
+    <section class="hero" style="padding: 3rem 0 4rem;" >
         <div class="container">
-            <h2 class="section-title">Our Clients</h2>
-            <p class="section-description">We are proud to have worked with leading brands and organizations in KSA and beyond.</p>
-            <div class="clients-logos">
-                <!-- Example logos, replace src with your client logos -->
-                <img src="../images/client1.png" alt="Client 1" class="client-logo" />
-                <img src="../images/client2.png" alt="Client 2" class="client-logo" />
-                <img src="../images/client3.png" alt="Client 3" class="client-logo" />
-                <img src="../images/client4.png" alt="Client 4" class="client-logo" />
-                <img src="../images/client5.png" alt="Client 5" class="client-logo" />
+            <div style="text-align: center;">
+                <h1 style="color: white; margin-bottom: 1rem;">Our Clients</h1>
+                <p style="font-size: 1.125rem; color: white; max-width: 600px; margin: 0 auto;">We are proud to have worked with leading brands and organizations in KSA and beyond.</p>
             </div>
+
         </div>
     </section>
+    <!-- Client Logos Section -->
 
+<section class="clients-section" style="text-align: center; background-color: white;">
+  <div class="clients-grid">
+    <img src="../images/Clients/Picture1.png"  width="80%">
+    <img src="../images/Clients/Picture1.png"  width="80%">
+
+  </div>
+</section>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -83,7 +92,84 @@
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+        <script src="../js/script.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            navToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('nav-open');
+                navToggle.classList.toggle('open');
+            });
+        });
+        </script>
+        <style>
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+            margin-left: 1rem;
+        }
+        .nav-toggle .bar {
+            width: 28px;
+            height: 3px;
+            background: #6b4c9a;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .nav-toggle.open .bar:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .nav-toggle.open .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-toggle.open .bar:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+        @media (max-width: 900px) {
+            .nav-toggle {
+                display: flex;
+            }
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                background: #fff;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+                padding: 0.5rem 0 1rem 0;
+                display: none;
+                z-index: 1000;
+            }
+            .nav-links.nav-open {
+                display: flex;
+            }
+            .nav-links li {
+                width: 100%;
+            }
+            .nav-links a {
+                display: block;
+                width: 100%;
+                padding: 1rem 2rem;
+                color: #6b4c9a;
+                border-bottom: 1px solid #eee;
+            }
+            .nav-links a:last-child {
+                border-bottom: none;
+            }
+        }
+        </style>
     <style>
     .clients-logos {
         display: flex;

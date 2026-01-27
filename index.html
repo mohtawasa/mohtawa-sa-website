@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="images/nav_logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mohtawa - Transforming Digital Presence in KSA. Leading digital marketing agency offering web development, SEO, social media marketing, and more.">
@@ -16,6 +17,11 @@
                     <img src="images/nav_logo.png" alt="Mohtawa Logo" class="nav-logo-img" />
                     <span style="color: #6b4c9a;">Mohtawa</span>
                 </div>
+                <button class="nav-toggle" aria-label="Open navigation">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -253,63 +259,65 @@
     <!-- Member 3 -->
     <div class="team-member">
       <div class="team-img">
-        <img src="images/Khimya-Pursawani.jpeg" alt="Khimya Pursawani">
+        <img src="images/Basim-Alkuraya.jpeg" alt="Basim Alkuraya">
       </div>
-      <h3 class="member-name">Khimya Pursawani</h3>
-      <p class="member-role">English Copy Lead</p>
+      <h3 class="member-name">Basim Alkuraya</h3>
+      <p class="member-role">Account Director</p>
       <p class="member-desc">
-        Expert English content lead, crafting engaging narratives to elevate brand visibility. Enhances marketing impact.
+        Experienced BD and AD managing key accounts with tailored marketing strategies. Strengthens client relationships.
       </p>
     </div>
 
-    <!-- Member 4 -->
-    <div class="team-member">
-      <div class="team-img">
-        <img src="images/Nadish-Mirza.jpeg" alt="Nadish Mirza">
-      </div>
-      <h3 class="member-name">Nadish Mirza</h3>
-      <p class="member-role">Digital Marketing Director</p>
-      <p class="member-desc">
-        15 years digital marketing expertise managing diverse regional projects. Ensures efficient project execution.
-      </p>
-    </div>
+
                 <div style="text-align: center; margin-top: 3rem;">
                 <a href="pages/team.html" class="btn btn-primary">View All Team Members →</a>
             </div>
   </div>
 </section>
+    <!-- Client Logos Section -->
 
+<section class="clients-section" style="text-align: center; background-color: white;">
+    <h2 class="section-title">OUR CLIENTS</h2>
+    <p class="section-subtitle">We are proud to have worked with leading brands and organizations in KSA and beyond.</p>
+
+  <div class="clients-grid">
+    <img src="images/Clients/Picture1.png"  width="80%">
+                    <div style="text-align: center; margin-top: 3rem;">
+                <a href="pages/clients.html" class="btn btn-primary">View All Clients →</a>
+
+  </div>
+</section>
 
     <!-- Portfolio Preview Section -->
     <section class="portfolio">
         <div class="container">
-            <h2 class="section-title">Our Portfolio</h2>
+            <h2 class="section-title">OUR PORTFOLIO</h2>
             <p class="section-subtitle">Featured projects showcasing our ability to transform ideas into visually stunning narratives</p>
             
             <div class="portfolio-grid">
                 <div class="portfolio-card">
                     <h3>FMTECH</h3>
+                    <img src="images/portfolio/fmtech-website.png" alt="FMTECH Website Screenshot" width="100%">
                     <div class="website">www.fmtech.sa</div>
                     <p>Built FMTECH's professional website with an intelligent service booking system and real-time maintenance tracking portal.</p>
-                    <a href="pages/portfolio.html" class="view-link">View Project →</a>
                 </div>
                 <div class="portfolio-card">
                     <h3>Adsmart Services</h3>
+                    <img src="images/portfolio/adsmart-website.png" alt="Adsmart Services Website Screenshot" width="100%">
                     <div class="website">adsmart-services.com</div>
                     <p>Designed a dynamic portfolio website showcasing marketing expertise with case studies and lead-capture system.</p>
-                    <a href="pages/portfolio.html" class="view-link">View Project →</a>
                 </div>
                 <div class="portfolio-card">
                     <h3>Crucial Crew</h3>
+                    <img src="images/portfolio/crucial-crew-website.png" alt="Crucial Crew Website Screenshot" width="65%">
                     <div class="website">www.crucialcrew.com</div>
                     <p>Crafted a high-energy fitness website with class booking integration and membership management.</p>
-                    <a href="pages/portfolio.html" class="view-link">View Project →</a>
                 </div>
                 <div class="portfolio-card">
                     <h3>Tayf Aziz</h3>
+                    <img src="images/portfolio/tayf-aziz-website.png" alt="Tayf Aziz Website Screenshot" width="100%">
                     <div class="website">www.tayfaziz.com</div>
                     <p>Created a welcoming website for pediatric rehabilitation services with intuitive appointment scheduling.</p>
-                    <a href="pages/portfolio.html" class="view-link">View Project →</a>
                 </div>
             </div>
 
@@ -427,6 +435,84 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+    // Responsive Navbar Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      navToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('nav-open');
+        navToggle.classList.toggle('open');
+      });
+    });
+    </script>
+    <style>
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+      margin-left: 1rem;
+    }
+    .nav-toggle .bar {
+      width: 28px;
+      height: 3px;
+      background: #6b4c9a;
+      margin: 4px 0;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .nav-toggle.open .bar:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .nav-toggle.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .nav-toggle.open .bar:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+    @media (max-width: 900px) {
+      .nav-toggle {
+        display: flex;
+      }
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        padding: 0.5rem 0 1rem 0;
+        display: none;
+        z-index: 1000;
+      }
+      .nav-links.nav-open {
+        display: flex;
+      }
+      .nav-links li {
+        width: 100%;
+      }
+      .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem;
+        color: #6b4c9a;
+        border-bottom: 1px solid #eee;
+      }
+      .nav-links a:last-child {
+        border-bottom: none;
+      }
+    }
+    </style>
 </body>
 <!-- WhatsApp Floating Button -->
 <a href="whatsapp://send?phone=966594420917"><svg viewBox="0 0 32 32" class="whatsapp-ico"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a>
