@@ -46,19 +46,19 @@
     </section>
 
     <!-- Contact Information -->
-    <section style="padding: 5rem 0; background: linear-gradient(135deg, #f8f9fa 0%, #f0f0f8 100%);">
+    <section style="padding: 5rem 0; background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 100%);">
         <div class="container">
-            <h2 class="section-title">Contact Information</h2>
+            <h2 class="section-title" style="color: var(--mohtawa-dark-purple);">Contact Information</h2>
             <p class="section-subtitle">We'd love to hear from you. Reach out using any of the methods below.</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 3.5rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 3.5rem;">
                 <!-- Location Card -->
-                <div style="padding: 3rem; background: white; border-radius: 1.5rem; box-shadow: 0 4px 20px rgba(107, 76, 154, 0.08); text-align: center; transition: transform 0.3s, box-shadow 0.3s;">
-                    <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #6b4c9a 0%, #2d1b4e 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <div class="contact-card">
+                    <div class="contact-icon-wrapper location">
                         <svg fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
                     </div>
-                    <h3 style="color: #2d1b4e; font-size: 1.5rem; margin-bottom: 1rem;">Location</h3>
-                    <p style="color: #666; font-size: 1.05rem; line-height: 1.8; margin-bottom: 0;">
+                    <h3 class="contact-card-title">Location</h3>
+                    <p class="contact-card-text">
                         Building No. 3827<br>
                         Al Saif Al Amadi Street<br>
                         Riyadh, KSA 12353
@@ -66,40 +66,172 @@
                 </div>
                 
                 <!-- Phone Card -->
-                <div style="padding: 3rem; background: white; border-radius: 1.5rem; box-shadow: 0 4px 20px rgba(107, 76, 154, 0.08); text-align: center; transition: transform 0.3s, box-shadow 0.3s;">
-                    <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #00d9ff 0%, #00a8cc 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <div class="contact-card">
+                    <div class="contact-icon-wrapper phone">
                         <svg fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                     </div>
-                    <h3 style="color: #2d1b4e; font-size: 1.5rem; margin-bottom: 1rem;">Phone</h3>
-                    <p style="color: #666; font-size: 1.05rem; margin-bottom: 1.5rem;">Call us to discuss your project</p>
-                    <a href="whatsapp://send?phone=966594420917" style="display: inline-block; background: linear-gradient(135deg, #00d9ff 0%, #00a8cc 100%); color: white; padding: 0.75rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 15px rgba(0, 217, 255, 0.2);">
-                        <span style="font-size: 1.1rem;">+966 594420917</span>
+                    <h3 class="contact-card-title">Phone</h3>
+                    <p class="contact-card-subtext">Call us to discuss your project</p>
+                    <a href="whatsapp://send?phone=966594420917" class="contact-btn phone-btn">
+                        +966 594420917
                     </a>
                 </div>
                 
                 <!-- Email Card -->
-                <div style="padding: 3rem; background: white; border-radius: 1.5rem; box-shadow: 0 4px 20px rgba(107, 76, 154, 0.08); text-align: center; transition: transform 0.3s, box-shadow 0.3s;">
-                    <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #6b4c9a 0%, #7c5ba6 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <div class="contact-card">
+                    <div class="contact-icon-wrapper email">
                         <svg fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                     </div>
-                    <h3 style="color: #2d1b4e; font-size: 1.5rem; margin-bottom: 1rem;">Email</h3>
-                    <p style="color: #666; font-size: 1.05rem; margin-bottom: 1.5rem;">Drop us an email anytime</p>
-                    <a href="mailto:info@mohtawa.sa" style="display: inline-block; background: linear-gradient(135deg, #6b4c9a 0%, #7c5ba6 100%); color: white; padding: 0.75rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 15px rgba(107, 76, 154, 0.2);">
-                        <span style="font-size: 1.05rem;">info@mohtawa.sa</span>
+                    <h3 class="contact-card-title">Email</h3>
+                    <p class="contact-card-subtext">Drop us an email anytime</p>
+                    <a href="mailto:info@mohtawa.sa" class="contact-btn email-btn">
+                        info@mohtawa.sa
                     </a>
                 </div>
             </div>
         </div>
         
         <style>
-        section > div > div > div:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(107, 76, 154, 0.15) !important;
+        .contact-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 24px rgba(107, 76, 154, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(107, 76, 154, 0.05);
         }
-        a[href^="tel:"]:hover,
-        a[href^="mailto:"]:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 25px rgba(0, 217, 255, 0.3) !important;
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--mohtawa-purple), var(--mohtawa-cyan));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 16px 48px rgba(107, 76, 154, 0.15);
+            border-color: rgba(0, 217, 255, 0.1);
+        }
+
+        .contact-card:hover::before {
+            opacity: 1;
+        }
+
+        .contact-icon-wrapper {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+            position: relative;
+            box-shadow: 0 8px 20px rgba(107, 76, 154, 0.15);
+        }
+
+        .contact-icon-wrapper.location {
+            background: linear-gradient(135deg, #6b4c9a 0%, #2d1b4e 100%);
+        }
+
+        .contact-icon-wrapper.phone {
+            background: linear-gradient(135deg, #00d9ff 0%, #00a8cc 100%);
+        }
+
+        .contact-icon-wrapper.email {
+            background: linear-gradient(135deg, #6b4c9a 0%, #7c5ba6 100%);
+        }
+
+        .contact-card:hover .contact-icon-wrapper {
+            transform: scale(1.1) rotateZ(5deg);
+            box-shadow: 0 12px 30px rgba(107, 76, 154, 0.25);
+        }
+
+        .contact-card-title {
+            color: var(--mohtawa-dark-purple);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+
+        .contact-card-text {
+            color: #666;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            text-align: center;
+            margin: 0;
+        }
+
+        .contact-card-subtext {
+            color: #999;
+            font-size: 0.95rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 1rem 2rem;
+            text-align: center;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            margin-top: 1rem;
+        }
+
+        .contact-btn.phone-btn {
+            background: linear-gradient(135deg, #00d9ff 0%, #00a8cc 100%);
+            color: white;
+            box-shadow: 0 6px 20px rgba(0, 217, 255, 0.2);
+        }
+
+        .contact-btn.phone-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.35);
+        }
+
+        .contact-btn.email-btn {
+            background: linear-gradient(135deg, #6b4c9a 0%, #7c5ba6 100%);
+            color: white;
+            box-shadow: 0 6px 20px rgba(107, 76, 154, 0.2);
+        }
+
+        .contact-btn.email-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(107, 76, 154, 0.35);
+        }
+
+        @media (max-width: 768px) {
+            .contact-card {
+                padding: 2rem;
+            }
+
+            .contact-icon-wrapper {
+                width: 70px;
+                height: 70px;
+            }
+
+            .contact-icon-wrapper svg {
+                width: 32px;
+                height: 32px;
+            }
+
+            .contact-card-title {
+                font-size: 1.25rem;
+            }
         }
         </style>
     </section>
