@@ -256,6 +256,134 @@
         </div>
     </section>
 
+    <!-- Social Media Section -->
+    <section style="padding: 5rem 0; background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-title" style="color: var(--mohtawa-dark-purple);">Connect With Us On Social Media</h2>
+                <p class="section-subtitle">Follow us for the latest updates, insights, and industry news</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; max-width: 800px; margin: 0 auto;">
+                <!-- Facebook Card -->
+                <a href="https://facebook.com/mohtawa" target="_blank" class="social-media-card facebook-card">
+                    <div class="social-media-icon-wrapper facebook-bg">
+                        <svg viewBox="0 0 24 24" fill="white" width="50" height="50">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </div>
+                    <h3 style="color: var(--mohtawa-dark-purple); font-size: 1.5rem; margin: 1.5rem 0 0.5rem; font-weight: 600;">Facebook</h3>
+                    <p style="color: #666; margin: 0 0 1.5rem;">Join our Facebook community for exclusive content and updates</p>
+                    <span style="display: inline-block; color: var(--mohtawa-purple); font-weight: 600; transition: all 0.3s ease;">Follow Us →</span>
+                </a>
+
+                <!-- LinkedIn Card -->
+                <a href="https://linkedin.com/company/mohtawa" target="_blank" class="social-media-card linkedin-card">
+                    <div class="social-media-icon-wrapper linkedin-bg">
+                        <svg viewBox="0 0 24 24" fill="white" width="50" height="50">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                        </svg>
+                    </div>
+                    <h3 style="color: var(--mohtawa-dark-purple); font-size: 1.5rem; margin: 1.5rem 0 0.5rem; font-weight: 600;">LinkedIn</h3>
+                    <p style="color: #666; margin: 0 0 1.5rem;">Connect with us on LinkedIn for industry insights</p>
+                    <span style="display: inline-block; color: var(--mohtawa-purple); font-weight: 600; transition: all 0.3s ease;">Follow Us →</span>
+                </a>
+            </div>
+        </div>
+
+        <style>
+        .social-media-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 24px rgba(107, 76, 154, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(107, 76, 154, 0.05);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            text-align: center;
+        }
+
+        .social-media-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .social-media-card.facebook-card::before {
+            background: #1877F2;
+        }
+
+        .social-media-card.linkedin-card::before {
+            background: #0A66C2;
+        }
+
+        .social-media-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 16px 48px rgba(107, 76, 154, 0.15);
+            border-color: rgba(0, 217, 255, 0.1);
+        }
+
+        .social-media-card:hover::before {
+            opacity: 1;
+        }
+
+        .social-media-card:hover span {
+            transform: translateX(8px);
+            color: var(--mohtawa-cyan);
+        }
+
+        .social-media-icon-wrapper {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(107, 76, 154, 0.15);
+        }
+
+        .social-media-icon-wrapper.facebook-bg {
+            background: linear-gradient(135deg, #1877F2 0%, #0A66C2 100%);
+        }
+
+        .social-media-icon-wrapper.linkedin-bg {
+            background: linear-gradient(135deg, #0A66C2 0%, #004182 100%);
+        }
+
+        .social-media-card:hover .social-media-icon-wrapper {
+            transform: scale(1.1) rotateZ(-5deg);
+            box-shadow: 0 14px 40px rgba(107, 76, 154, 0.25);
+        }
+
+        @media (max-width: 768px) {
+            .social-media-card {
+                padding: 2rem;
+            }
+
+            .social-media-icon-wrapper {
+                width: 80px;
+                height: 80px;
+            }
+
+            .social-media-icon-wrapper svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        </style>
+    </section>
 
     <!-- Footer -->
     <footer>
