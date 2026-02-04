@@ -218,7 +218,7 @@ nav {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 10rem 2rem 25rem;
+  padding: 10rem 2rem 10rem;
   background: url('../images/hero-bg.png') center center/cover no-repeat;
 }
 
@@ -467,7 +467,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 100px;
 }
 
 .mv-item {
