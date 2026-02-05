@@ -1024,7 +1024,7 @@ section {
 }
 
 .contact-card-btn.phone-btn {
-  background: linear-gradient(135deg, #00d9ff 0%, #00a8cc 100%);
+  background: linear-gradient(135deg, #00d9ff 100%, #00a8cc 100%);
   color: white;
   box-shadow: 0 6px 20px rgba(0, 217, 255, 0.2);
 }
