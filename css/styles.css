@@ -583,7 +583,7 @@ section {
   width: 4rem;
   height: 4rem;
   background: linear-gradient(135deg, var(--mohtawa-purple), var(--mohtawa-dark-purple));
-  border-radius: 50%;
+  border-radius: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -591,6 +591,9 @@ section {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
+  object-fit: contain;
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
 
 .service-card:hover .service-icon {
