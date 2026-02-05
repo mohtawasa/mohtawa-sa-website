@@ -1647,3 +1647,41 @@ footer {
 .social-media-item img:hover {
   transform: scale(1.03);
 }
+/* Clients Grid */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  place-items: center;
+}
+
+.clients-grid img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  max-width: 300px;
+}
+
+@media (max-width: 1024px) {
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
