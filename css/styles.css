@@ -1518,6 +1518,11 @@ footer {
     align-items: center;
     text-align: center;
   }
+  .usp-images  {
+    place-content: center;
+
+  }
+
 }
 
 .our-featured-projects {
