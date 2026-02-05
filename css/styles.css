@@ -375,7 +375,7 @@ section {
    ============================================ */
 
 .about-section {
-  background-color: white;
+  
   text-align: center;
   padding: 75px 20px;
 
@@ -452,6 +452,7 @@ section {
    Mission & Vision Section
    ============================================ */
 .mission-vision-section {
+  background-color: white;
   text-align: center;
   padding: 60px 20px;
 
@@ -553,10 +554,11 @@ section {
 /* ============================================
    Services Section
    ============================================ */
-.services {
+/*.services {
+  
   background-color: white;
 }
-
+*/
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
